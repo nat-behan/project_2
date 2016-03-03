@@ -1,0 +1,409 @@
+/* Applies to every page - index, about and contact */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+ color: #222; 
+ background: #ccc; 
+ letter-spacing: 0.02em;
+ width: 100%;
+}
+
+body @font-face {
+ font-family: 'Lato', sans-serif;
+ src: url(https://fonts.googleapis.com/css?family=Lato); 
+ font-weight: normal;
+ font-style: normal;
+ font-size: 16px 1em; 
+}
+
+.container {
+ display: block;
+ width: 75%;
+ margin: 0 auto;
+ background: #fff; 
+}
+
+.container p {
+ margin-bottom: 0.625em;
+ line-height: 1.2; 
+}
+
+.container-main {
+ padding-left: 1em;	
+}
+
+#logo {
+ display: block;	
+ width: 100%;	
+ float: left;
+ padding-bottom: 0.625em; 
+}
+
+nav ul {
+ clear: left;
+ list-style-type: none;
+ margin: 0 auto;
+ padding-right: 0.625em;
+ overflow: hidden;
+ background-color: #11a259; 
+}
+
+nav li {
+ float: left;
+}
+
+nav li a {
+ display: block;
+ color: #fff;
+ text-align: center;
+ padding: 0.625em 0.938em;
+ text-decoration: none;
+}
+
+nav li a:hover {
+ background-color: #fff;
+ color: #11a259; 
+}
+
+a {
+ color: #11a259;
+ font-weight: bolder;
+}
+
+a:hover {
+ color: #222;
+}
+
+h1 {
+ font-size: 1.875em;
+ color: #11a259;
+ margin: 0.938em 0 0.938em 0;
+ position: relative;
+ font-weight: 400;
+}
+
+h2 {
+ padding-left: 1em;	
+ padding-top: 1em;
+ font-size: 1.563em;
+ border-bottom: solid #ddd;
+ color: #999;
+ width: 70%;	
+}
+
+.video-header {
+ padding-left: 1em;	
+ padding-top: 1em;
+ font-size: 1.563em;
+ border-bottom: solid #ddd;
+ color: #999;
+ width: 70%;	
+}
+
+footer {
+ clear: both;
+ padding: 2.5em;
+ font-style: italic;
+ font-size: 0.813em;
+ color: #ffffff;
+ background-color: #333333;
+ margin-top: 1.250em;
+}
+
+/* Index Page */
+
+#hero-image {
+ display: 80%;
+ padding-top: 0.625em;
+ padding-left: 2.2%;
+ padding-right: 2.2%;
+}
+
+#football {
+ display: inline-block;
+ float: left;
+ width: 65%;
+}
+
+#events {
+ display: inline-block;
+ float: right;	
+ width: 30%;
+}
+
+#events li {
+padding-top: 0.625em;	
+}
+
+h3 {
+ padding-top: 1em;	
+ font-size: 1.563em;
+ border-bottom: solid #ddd;
+ color: #999;
+}
+
+#tournaments {
+ display: inline-block;
+ width: 100%;
+ float: left; 
+}
+
+div.img {
+ display: inline-block;
+ justify-content: center;	
+ margin: 1em;
+ padding-left: 1em;
+}
+
+div.img img {
+ width: 16.25em; 
+ height: 12.50em;
+}
+
+div.img img:hover {
+ border: 0.063em solid #777;
+ padding: 0.938em;
+}
+
+div.desc {
+ padding: 0.625em;
+ text-align: center;
+}
+
+/* About */
+
+#about {
+ display: inline-block;
+ float: left;
+ width: 90%;
+ padding-bottom: 0.938em;
+}
+
+.quote {
+ font-style: italic;
+ font-weight: bold;
+ font-size: 1.5em;
+}
+
+.video-player {
+ clear: both;
+ padding-top: 3%;
+ padding-left: 15%;
+ padding-right: 15%;
+}
+
+/* Contact Page */
+
+#form input[type="text"], textarea {
+ border: 1px solid #DADADA;
+ color: #888;
+ width: 300px;
+ margin-bottom: 16px;
+ margin-right: 6px;
+ margin-top: 2px;
+ outline: 0 none;
+ padding: 3px 3px 3px 5px;
+ line-height: 30px;
+} 
+
+textarea {
+ height: 100px;
+ width: 400px;
+ padding: 5px;
+}
+
+.button {
+ width: 110px;
+ height: 40px;
+ background: #11a259;
+ border: none;
+ padding: 10px 25px 10px 25px;
+ color: #fff;
+ font-weight: bolder;
+ border-radius: 5px;
+ cursor: pointer;
+ -webkit-transition: width 2s;
+ transition: width 2s;
+}
+
+.button:hover {
+ background-color: #0c7340;
+ color: #f2f2f2;
+ width: 155px;
+ font-size: 18px;
+}
+
+/*For Mobile*/
+
+@media only screen and (max-width: 480px) { /* Mobile */
+
+/* Index Page */
+
+.container {
+width: 100%;
+}
+
+#logo img {
+width: 8.2em;
+height: 7.2em;
+}
+
+#hero-image {
+display: none;
+}
+
+#football {
+display: block;
+width: 95%;
+}
+
+#events {
+display: block;
+width: 100%;
+float: left; 
+}
+
+#events li {
+padding-left: 1em;
+}
+	
+h1 {
+font-size: 1.3em;
+color: #11a259;
+margin: 0.938em 0 0.938em 0;
+position: relative;
+font-weight: 400;
+}
+
+h2 {
+padding-left: 1em;	
+padding-top: 1em;
+font-size: 1.2em;
+border-bottom: solid #ddd;
+color: #999;
+width: 70%;	
+}
+
+h3 {
+padding-left: 1em;	
+padding-top: 1em;
+font-size: 1.2em;
+border-bottom: solid #ddd;
+color: #999;
+width: 70%;	
+}
+
+div.img img {
+width: 15em; 
+height: 12.5em;
+}
+
+/* About Page */
+	
+.quote {
+font-style: italic;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.video-player {
+display: none;
+}
+
+.video-header {
+display: none;
+}
+
+/* Contact Page */
+
+.button:hover {
+display: none;
+}
+}
+
+/* For Tablet */
+
+@media only screen and (max-width: 720px) {/* Tablet */
+
+.container {
+width: 100%;
+}
+	
+#hero-image {
+display: none;
+}
+
+/*
+#football {
+display: inline-block;
+float: left;
+width: 65%;
+}
+
+#events {
+display: inline-block;
+float: right;	
+width: 30%;
+}
+
+#events li {
+padding-top: 0.625em;	
+}
+*/
+
+#tournaments {
+display: inline-block;
+width: 100%;
+float: left; 
+}
+
+div.img {
+display: inline-block;
+margin: 0.8em;
+padding-left: 0.1em;
+}
+
+div.img img {
+width: 13em; 
+height: 11em;
+}
+
+div.img img:hover {
+border: 0.063em solid #777;
+padding: 0.7em;
+}
+
+div.desc {
+padding: 0.625em;
+text-align: center;
+}
+
+/* About Page */
+
+.quote {
+font-style: italic;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.video-player {
+display: none;
+}
+
+.video-header {
+display: none;
+}
+
+/* Contact Page */
+
+.button:hover {
+display: none;
+}
+}
+
+
+   
+
